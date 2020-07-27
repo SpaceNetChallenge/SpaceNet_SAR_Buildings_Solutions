@@ -31,16 +31,14 @@ you consider?
     masks the CNN predicted 3 masks: (body mask, separations between
     buildings, building contours). This helped to separate buildings
     much better than the simple watershed
-    approach.![](media/image1.png){width="4.911117672790901in"
-    height="4.119792213473316in"}
+    approach.![](media/image1.png)
 
 -   At first I used a random split for validation holdout. The gap
     between leaderboard and validation was huge \~40%. That is a clear
     sign of train data leak to validation. After visualization of the
     tiles by their coordinates I saw that there were \~15 passes over
     each location and I prepared a small holdout southeastern part of
-    train data.![](media/image2.png){width="5.5322922134733155in"
-    height="4.161458880139983in"}
+    train data.![](media/image2.png)
 
 -   As the data contained speckle noise I decided to combat that with
     heavy multiscale test time augmentations (6 scales). The
