@@ -1,0 +1,4 @@
+PREDICTION_ROOT: '/val_predictions'
+ENSEMBLED_PREDICTION_ROOT: '/val_ensembled_predictions'
+POLY_CSV_ROOT: '/val_polygons'
+TEST_TO_VAL: True
