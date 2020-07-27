@@ -43,8 +43,7 @@ parts:
 
 The figure below shows this pipeline:
 >
-![](media/image2.png){width="5.777777777777778in"
-height="2.101882108486439in"}
+![](media/image2.png)
 >
 As for the first part, I tried following to come up with the final
 solution:
@@ -182,9 +181,7 @@ height="2.2864588801399823in"}
 
     -   Encoder-C: EfficientNet-b8 trained with AdvProp setting
 
-```{=html}
-<!-- -->
-```
+
 -   I believe the choice of the encoders is one of the keys: use of
     EfficientNet-b7/b8 improved the score a lot.
 
@@ -349,8 +346,7 @@ Please specify any potential limitations with the algorithm:
     with a large look angle relative to the nadir and this causes the
     difficulty for the model to locate the footprints.
 
-![](media/image3.png){width="5.139583333333333in"
-height="2.689316491688539in"}
+![](media/image3.png)
 
 
 ## Instructions for Final Scoring
