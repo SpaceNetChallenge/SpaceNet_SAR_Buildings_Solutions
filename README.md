@@ -25,6 +25,7 @@ aws s3 ls s3://spacenet-dataset/spacenet-model-weights/spacenet-6/
                            PRE 3-SatShipAI/
                            PRE 4-motokimura/
                            PRE 5-selim_sef/
+                           PRE baseline/
 ```
 
 Questions about SpaceNet? Check out our website at https://spacenet.ai.
