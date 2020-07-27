@@ -55,8 +55,7 @@ are shown below.*
 >
 *9543, 9545, 9547, 9549, 9551, 9553, 9555,*
 >
-![](media/image1.png){width="5.755208880139983in"
-height="1.3097397200349956in"}*9544, 9546, 9548, 9550, 9552, 9554,
+![](media/image1.png)*9544, 9546, 9548, 9550, 9552, 9554,
 9556*
 >
 *We took advantage of this pattern in two ways: a) we created an
