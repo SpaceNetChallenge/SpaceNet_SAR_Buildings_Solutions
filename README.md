@@ -10,9 +10,10 @@ The five subdirectories in this repository comprise the code for the winning sol
 
 Competitors’ scores in the SpaceNet 6: Multi-Sensor All Weather Mapping Challenge compared to the baseline model. The overall score represents the SpaceNet Metric (x 100) for the entire scoring set. We also report model precision (ratio of false predictions) and recall (ratio of missed ground truth polygons):
 
-->![alt text](/performance_table.png)<-
+![alt text](/performance_table.png)
 
 The model architectures, ensemble and pre-training schemes, as well as training and inference time for each of the winning solutions. Note that the total contribution to the total NN’s ensembled is listed in parentheses in the Architectures column. Total training and inference times are calculated based upon an AWS p3.8xlarge instance with 4 NVIDIA Tesla V100 GPUs:
+
 ![alt text](/approach_table.png)
 
 ## Coming soon
