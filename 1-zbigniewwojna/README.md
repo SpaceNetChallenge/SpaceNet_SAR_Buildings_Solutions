@@ -97,8 +97,7 @@ your solution performance:
 -   The most important was the correct train/val split. Our estimates of
     the tile positions for train and public test dataset is below.
 
-![](media/image3.png){width="5.744792213473316in"
-height="2.6815387139107614in"}
+![](media/image3.png)
 
 -   You can see the overlap between them, which could cause the
     potential overfitting to the right part of the red area if you
@@ -110,8 +109,7 @@ height="2.6815387139107614in"}
     overlapping tiles from both train and val dataset like on the
     image below. We estimated that there are \~200 unique tiles.
 
-![](media/image5.png){width="6.270833333333333in"
-height="3.9305555555555554in"}
+![](media/image5.png)
 
 -   I get used to training large datasets taking advantage of 4 cards or
     more in a single training. This dataset is much smaller than it
@@ -128,8 +126,7 @@ height="3.9305555555555554in"}
     footprints, 0.25 x edges, 0.1 x contacts, edge width 1, contact
     width 4. Example target mask presented below:
 
-![](media/image8.png){width="4.046875546806649in"
-height="3.9217136920384954in"}
+![](media/image8.png)
 
 -   Loss function: 1x weighted focal loss + 1x dice loss
 
@@ -147,8 +144,7 @@ height="3.9217136920384954in"}
 
     -   y tile coordinate - single-channel float in the range \[-1, 1\]
 
-![](media/image1.png){width="6.270833333333333in"
-height="2.736111111111111in"}
+![](media/image1.png)
 
 -   Copy weight for 4th input channel and tried different channel
     ordering
@@ -157,22 +153,18 @@ height="2.736111111111111in"}
     potentially helps with more accurate batch statistics when
     finetuning a pretrained network.
 
-![](media/image4.png){width="6.270833333333333in"
-height="2.736111111111111in"}
+![](media/image4.png)
 
 -   Left-right flip helps, rotation and upside-down not, due to SAR
     artifacts from the reflection around water
 
-![](media/image6.png){width="6.270833333333333in"
-height="2.986111111111111in"}
+![](media/image6.png)
 
 -   Inference: 8 models in the ensemble
 
 -   Inference: test time augmentation: left-right flip, 3 scales
 
-![](media/image2.png){width="6.270833333333333in"
-height="2.7083333333333335in"}
-
+![](media/image2.png)
 -   Mask -\Polygons: I extended the watershed algorithm that I found
     to be very helpful. It was crucial to correctly parametrize the
     postprocessing, for example I removed every prediction below 120
