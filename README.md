@@ -16,7 +16,15 @@ The model architectures, ensemble and pre-training schemes, as well as training 
 
 ![alt text](/approach_table.png)
 
-## Coming soon
-- Links to download the competitors' trained models
+## Model Weights
+All SpaceNet6 model weights can be downloaded from our s3 bucket:
+```
+aws s3 ls s3://spacenet-dataset/spacenet-model-weights/spacenet-6/
+                           PRE 1-zbigniewwojna/
+                           PRE 2-MaksimovKA/
+                           PRE 3-SatShipAI/
+                           PRE 4-motokimura/
+                           PRE 5-selim_sef/
+```
 
 Questions about SpaceNet? Check out our website at https://spacenet.ai.
