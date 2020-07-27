@@ -1,0 +1,36 @@
+{
+  "network": "eff_unet",
+  "encoder": "tf_efficientnet_b5_ns",
+  "fp16": true,
+  "data_multiplier": 3,
+  "num_classes": 3,
+  "optimizer": {
+        "batch_size": 8,
+        "type": "FusedAdam",
+        "clip": 3,
+        "learning_rate": 0.0001,
+        "schedule": {
+            "type": "step",
+            "mode": "epoch",
+            "epochs": 50,
+            "params": {
+              "steps": [[0,0.0001],[20,0.00005],[30,0.00003],[40,0.00001]]
+            }
+        }
+    },
+    "input": {
+      "crop_height": 704,
+      "crop_width": 416
+    },
+  "transforms": "train_trasforms_standard",
+   "mask_loss": {
+    "type": "ComboLoss",
+    "params": {
+      "weights": {
+        "dice": 1,
+        "bce": 2
+      },
+      "channel_weights": [1, 0.2, 0.3]
+    }
+  }
+}
