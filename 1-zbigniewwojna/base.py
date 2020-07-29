@@ -6,6 +6,9 @@ import os
 from fiona.errors import DriverError
 from fiona._err import CPLE_OpenFailedError
 
+'''
+Copied from: https://github.com/CosmiQ/solaris/blob/master/solaris/eval/base.py
+'''
 
 def calculate_iou(pred_poly, test_data_GDF):
     """Get the best intersection over union for a predicted polygon.
